@@ -1,11 +1,8 @@
 import React from 'react';
-import Checkbox from '@material-ui/core/Checkbox';
-import styled from 'styled-components'
 import Button from '@material-ui/core/Button';
 
 
 function Item({label, checked, selected, onCheck, onSelect}) {
-    console.log(selected)
     return (
         <div>
             <input 

@@ -56,32 +56,27 @@ class App extends Component {
   }
 
   handleFilter = condition => {
+    let newItems = [...this.state.items]
     switch (condition) {
       case 'all':
-        const newItems = this.state.items.map( item => ({...item, isSelected: true}))
-        this.setState({items: newItems, allSelected: true})
+        newItems = this.state.items.map( item => ({...item, isSelected: true}))
         break;
       case 'initials':
-        const initials = this.state.items.map( item => ({...item, isSelected: item.isInitial}))
-          this.setState({items: initials});
+        newItems = this.state.items.map( item => ({...item, isSelected: item.isInitial}))
         break;
       case 'added':
-        const added = this.state.items.map( item => ({...item, isSelected: !item.isInitial}))
-        this.setState({items: added});
-        break;
-      case 'selected':
+        newItems = this.state.items.map( item => ({...item, isSelected: !item.isInitial}))
         break;
       case 'unselected':
-        const unselected = this.state.items.map( item => ({...item, isSelected: !item.isSelected}))
-        this.setState({items: unselected});
+        newItems = this.state.items.map( item => ({...item, isSelected: !item.isSelected}))
         break;
       case 'completed':
-        const completed = this.state.items.map( item => ({...item, isSelected: item.value}))
-        this.setState({items: completed});
+        newItems = this.state.items.map( item => ({...item, isSelected: item.value}))
         break;
       default:
         break;
     }
+    this.setState({items: newItems})
   }
 
   render(){
