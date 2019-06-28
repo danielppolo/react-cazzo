@@ -1,7 +1,12 @@
 Todo:
-  ☐ Implementare la struttura neccesaria per visualizzsre la lista di items, dove value é rappresentato come una checkbox.
-  ☐ Implementare una "Toggle All" checkbox, che al click dovrá selezionare/deselezionare tutte le righe.
-  ☐ Implementare un input per aggiungere un item con la label inserita alla lista. Il value di default per il nuovo item deve esere false.
-  ☐ Implementare per ogni item un bottone "Toggle Done" che al click dovrá evidenziare l'item come completato/non competato. Dovrá essere impossibile interagire con la checkbox di un elemento in stato completato.
-  ☐ Implementare una select per filtrare gli item della lista [tutti, iniziali, aggiunti, selezionati, non selezionati, completati]
-  ☐ L'aspetto stilistico della lista no é importante, purché sia chiaramente visibile quando un elemento é selezionato o flaggato come completato, concentrarse sulla parte logica.
+  ✔ Implementare la struttura neccesaria per visualizzsre la lista di items, @done(19-06-27 23:49)
+    dove value é rappresentato come una checkbox.
+  ✔ Implementare una "Toggle All" checkbox, che al click dovrá selezionare/deselezionare tutte le righe. @done(19-06-28 00:01)
+  ✔ Implementare un input per aggiungere un item con la label inserita alla lista. @done(19-06-28 00:35)
+    Il value di default per il nuovo item deve esere false.
+  ✔ Implementare per ogni item un bottone "Toggle Done" che al click dovrá evidenziare l'item come completato/non competato. @done(19-06-28 00:35)
+    Dovrá essere impossibile interagire con la checkbox di un elemento in stato completato.
+  ✔ Implementare una select per filtrare gli item della lista @done(19-06-28 00:56)
+    [tutti, iniziali, aggiunti, selezionati, non selezionati, completati]
+  ✔ L'aspetto stilistico della lista no é importante, purché sia chiaramente visibile @done(19-06-28 00:35)
+     quando un elemento é selezionato o flaggato come completato, concentrarse sulla parte logica.
